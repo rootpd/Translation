@@ -54,7 +54,7 @@ class PhpFileStorage extends \Nette\Caching\Storages\FileStorage implements \Net
 		$cacheKey = substr_replace(
 			$key,
 			trim(strtr($this->hint, '\\/@', '.._'), '.') . '-',
-			strpos($key, Cache::NAMESPACE_SEPARATOR) + 1,
+			strpos($key, "\x00") + 1,
 			0
 		);
 
