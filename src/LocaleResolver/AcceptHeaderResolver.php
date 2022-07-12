@@ -16,8 +16,6 @@ use Nette\Http\IRequest;
 class AcceptHeaderResolver implements \Kdyby\Translation\IUserLocaleResolver
 {
 
-	use \Kdyby\StrictObjects\Scream;
-
 	const ACCEPT_LANGUAGE_HEADER = 'Accept-Language';
 
 	/**

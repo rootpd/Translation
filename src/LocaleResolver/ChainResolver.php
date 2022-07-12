@@ -16,7 +16,7 @@ use Kdyby\Translation\Translator;
 class ChainResolver implements \Kdyby\Translation\IUserLocaleResolver
 {
 
-	use \Kdyby\StrictObjects\Scream;
+
 
 	/**
 	 * @var array|\Kdyby\Translation\IUserLocaleResolver[]

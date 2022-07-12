@@ -20,9 +20,6 @@ use Symfony\Component\Translation\MessageCatalogue;
  */
 class TranslationLoader implements \Kdyby\Translation\IResourceLoader
 {
-
-	use \Kdyby\StrictObjects\Scream;
-
 	/**
 	 * Loaders used for import.
 	 *
