@@ -390,12 +390,6 @@ class TranslationExtension extends \Nette\DI\CompilerExtension
 
 		if ($config['logging'] === TRUE) {
 			$translator->addSetup('injectPsrLogger');
-
-		//} elseif (is_string($config['logging'])) { // channel for kdyby/monolog
-		//	$translator->addSetup('injectPsrLogger', [
-		//		new Statement(sprintf('@%s::channel', KdybyLogger::class), [$config['logging']]),
-		//	]);
-
 		} elseif ($config['logging'] !== NULL) {
 			throw new \Kdyby\Translation\InvalidArgumentException(sprintf(
 				'Invalid config option for logger. Valid are TRUE for general psr/log or string for kdyby/monolog channel, but %s was given',
