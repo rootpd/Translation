@@ -21,7 +21,6 @@ use Symfony\Component\Translation\Writer\TranslationWriter;
 class ExtractCommand extends \Symfony\Component\Console\Command\Command
 {
 
-	use \Kdyby\StrictObjects\Scream;
 
 	/**
 	 * @var string
